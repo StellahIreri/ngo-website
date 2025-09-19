@@ -9185,3 +9185,32 @@ textarea.form-control {
   flex-direction: column;
   justify-content: flex-start;
 }
+/* Navbar background always solid white, from the very top */
+.navbar {
+  background-color: #fff !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed; /* makes it stick to top */
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* subtle divider line */
+}
+
+/* Normal nav links */
+.navbar .nav-link {
+  color: #111 !important;
+}
+
+/* Hover state */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #000 !important;
+}
+
+/* Active/current page link stays orange */
+.navbar .nav-link.active,
+.navbar .nav-item.active .nav-link {
+  color: #f85a40 !important;  /* same orange */
+  font-weight: 600;
+}
+

@@ -9214,3 +9214,113 @@ textarea.form-control {
   font-weight: 600;
 }
 
+/* ...existing code... */
+
+/* Make founder profile cards equal height (match the tallest) */
+section.ftco-section .row > .col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+section.ftco-section .row > .col-md-4 .staff {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section.ftco-section .row > .col-md-4 .staff .text {
+  flex: 1 1 auto;
+}
+
+/* Ensure columns in the row stretch to same height */
+section.ftco-section .row {
+  align-items: stretch;
+}
+
+
+/* Center founder profile pictures */
+.staff img,
+.staff .img {
+  display: block;
+  margin: 0 auto 15px;
+}
+/* optional: ensure circular images keep object-fit */
+.staff img {
+  object-fit: cover;
+}
+/* ...existing code... */
+
+/* ...existing code... */
+
+ /* Founders / staff cards — paste after the existing rules */
+.ftco-section .staff {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(34,34,34,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 280px;
+}
+
+.ftco-section .staff:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(34,34,34,0.09);
+}
+
+.ftco-section .staff img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(249,109,0,0.06);
+}
+
+.ftco-section .staff .text h3 {
+  margin-top: 10px;
+  font-size: 1.05rem;
+}
+
+.ftco-section .staff .position {
+  color: #F96D00;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ftco-section .staff .text p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* clamp style used by the read-more JS */
+.ftco-section .staff .text p.clamped {
+  max-height: 6.2em; /* ~4 lines */
+  overflow: hidden;
+}
+
+/* read more button */
+.read-more {
+  background: transparent;
+  border: none;
+  color: #F96D00;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 8px;
+}
+
+/* tighten grid on smaller screens (scoped to ftco-section to avoid global bootstrap changes) */
+@media (max-width: 991px) {
+  .ftco-section .col-md-4 { flex: 0 0 48%; max-width: 48%; }
+}
+@media (max-width: 640px) {
+  .ftco-section .col-md-4 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* ...existing code... */

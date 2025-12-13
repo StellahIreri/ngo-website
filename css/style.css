@@ -9322,5 +9322,18 @@ section.ftco-section .row {
 @media (max-width: 640px) {
   .ftco-section .col-md-4 { flex: 0 0 100%; max-width: 100%; }
 }
+#gallery-filters button {
+  margin: 5px;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery.img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
 
 /* ...existing code... */

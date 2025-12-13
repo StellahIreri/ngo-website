@@ -139,7 +139,83 @@
 
      
 <section class="ftco-section ftco-gallery">
-  <div class="container">
+<div class="row mb-5 justify-content-center">
+  <div class="col-md-10 text-center">
+    <div id="gallery-filters">
+      <button class="btn btn-outline-primary active" data-filter="*">All</button>
+      <button class="btn btn-outline-primary" data-filter=".conference">Youth Conference</button>
+      <button class="btn btn-outline-primary" data-filter=".outreach">Community Outreach</button>
+      <button class="btn btn-outline-primary" data-filter=".workshop">Workshops</button>
+      <button class="btn btn-outline-primary" data-filter=".training">Training Sessions</button>
+    </div>
+  </div>
+</div>
+<div class="row gallery-container">
+
+  <!-- Youth Conference -->
+  <div class="col-md-3 gallery-item conference">
+    <a href="images/bg_1.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/bg_1.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <div class="col-md-3 gallery-item conference">
+    <a href="images/bg_7.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/bg_7.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <!-- Community Outreach -->
+  <div class="col-md-3 gallery-item outreach">
+    <a href="images/big_3.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/big_3.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <div class="col-md-3 gallery-item outreach">
+    <a href="images/bg_4.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/bg_4.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <!-- Workshops -->
+  <div class="col-md-3 gallery-item workshop">
+    <a href="images/image_1.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/image_1.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <div class="col-md-3 gallery-item workshop">
+    <a href="images/image_2.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/image_2.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <!-- Training -->
+  <div class="col-md-3 gallery-item training">
+    <a href="images/image_3.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/image_3.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+  <div class="col-md-3 gallery-item training">
+    <a href="images/image_4.jpeg" class="gallery image-popup img d-flex align-items-center justify-content-center" 
+       style="background-image: url('images/image_4.jpeg');">
+      <div class="icon"><span class="icon-search"></span></div>
+    </a>
+  </div>
+
+</div>
+
+	
+  <!-- <div class="container">
     <div class="d-md-flex">
       <a href="images/bg_1.jpeg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url('images/bg_1.jpeg');">
         <div class="icon d-flex justify-content-center align-items-center">
@@ -198,7 +274,7 @@
           <span class="icon-search"></span>
         </div>
       </a>
-  </div>
+  </div> -->
 </section>
 
     <!-- <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
@@ -331,6 +407,24 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
+	  <script>
+  $(document).ready(function () {
+    $('#gallery-filters button').click(function () {
+      $('#gallery-filters button').removeClass('active');
+      $(this).addClass('active');
+
+      var filter = $(this).data('filter');
+
+      if (filter === '*') {
+        $('.gallery-item').show(300);
+      } else {
+        $('.gallery-item').hide(300);
+        $(filter).show(300);
+      }
+    });
+  });
+</script>
+
   </body>
 </html>

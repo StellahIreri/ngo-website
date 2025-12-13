@@ -9336,4 +9336,40 @@ section.ftco-section .row {
   background-position: center;
 }
 
+/* Ensure gallery items are positioning context */
+.ftco-gallery .gallery {
+  position: relative;
+}
+
+/* Center the zoom icon */
+.ftco-gallery .gallery .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Icon color & size */
+.ftco-gallery .gallery .icon span {
+  color: #000;
+  font-size: 18px;
+}
+
+/* Show icon on hover */
+.ftco-gallery .gallery:hover .icon {
+  opacity: 1;
+}
+
 /* ...existing code... */

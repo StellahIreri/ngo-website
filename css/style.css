@@ -9399,3 +9399,19 @@ section.ftco-section .row {
 .hero-placer p {
   color: #ffffff;
 }
+/* Mission & Vision headings */
+.ftco-section h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #222;
+}
+.ftco-section h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.ftco-section h5 {
+  color: #111;
+}

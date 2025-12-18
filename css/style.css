@@ -9415,3 +9415,34 @@ section.ftco-section .row {
 .ftco-section h5 {
   color: #111;
 }
+
+/* Mission & Vision layout */
+.mission-vision {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.mission-vision p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.mission-vision h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.ftco-section {
+  background: #f9f9f9;
+}
+.mission-vision h5::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #f9a825;
+  margin: 10px auto;
+}

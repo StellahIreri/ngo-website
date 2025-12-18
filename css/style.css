@@ -9492,3 +9492,17 @@ section.ftco-section .row {
   position: relative;
   z-index: 2;
 }
+/* Video play icon styling */
+.video-icon {
+  background: rgba(0, 0, 0, 0.6);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.video-icon span {
+  color: #fff;
+  font-size: 26px;
+  margin-left: 4px;
+}
+

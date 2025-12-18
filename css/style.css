@@ -9384,3 +9384,7 @@ section.ftco-section .row {
   color: #fff;
 }
 
+.hero-wrap h1,
+.hero-wrap p {
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+}

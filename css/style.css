@@ -9446,3 +9446,23 @@ section.ftco-section .row {
   background: #f9a825;
   margin: 10px auto;
 }
+/* FULL WIDTH Mission & Vision */
+.mission-section {
+  width: 100%;
+}
+
+.mission-vision {
+  max-width: 1400px;   /* almost full screen on large monitors */
+  padding: 30px 60px;
+}
+
+.mission-vision p {
+  font-size: 1.15rem;
+  line-height: 2;
+}
+
+.mission-vision h5 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 35px;
+}

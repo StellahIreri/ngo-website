@@ -9466,3 +9466,29 @@ section.ftco-section .row {
   font-weight: 800;
   margin-top: 35px;
 }
+/* Mission & Vision background */
+.mission-section {
+  position: relative;
+  background-image: url('images/yout.jpg'); /* or any soft image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* dark overlay to keep text readable */
+.mission-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.88); /* VERY FAINT */
+  z-index: 1;
+}
+
+/* keep content above overlay */
+.mission-section .mission-vision {
+  position: relative;
+  z-index: 2;
+}

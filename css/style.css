@@ -9505,4 +9505,83 @@ section.ftco-section .row {
   font-size: 26px;
   margin-left: 4px;
 }
+/* Footer overall */
+.ftco-footer {
+    position: relative;
+    background: #333; /* fallback color */
+    color: #fff;
+    padding: 60px 0 20px 0;
+    font-size: 14px;
+}
+
+/* Overlay inside footer */
+.ftco-footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* faint dark overlay */
+    z-index: 0;
+}
+
+/* Footer content above overlay */
+.ftco-footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer headings */
+.ftco-footer h2.ftco-heading-2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Footer text */
+.ftco-footer p,
+.ftco-footer ul li .text {
+    color: #fff;
+}
+
+/* Footer links */
+.ftco-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ftco-footer a:hover {
+    color: #f96d00; /* optional highlight color */
+    text-decoration: underline;
+}
+
+/* Footer lists */
+.ftco-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ftco-footer ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer bottom text */
+.ftco-footer .row.text-center p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+/* Make footer responsive */
+@media (max-width: 768px) {
+    .ftco-footer {
+        text-align: center;
+    }
+    .ftco-footer .col-md-2,
+    .ftco-footer .col-md-3 {
+        margin-bottom: 30px;
+    }
+}
 

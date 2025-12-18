@@ -9373,3 +9373,14 @@ section.ftco-section .row {
 }
 
 /* ...existing code... */
+.hero-text-box {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px 30px;
+  border-radius: 8px;
+}
+
+.hero-text-box h1,
+.hero-text-box p {
+  color: #fff;
+}
+

@@ -9804,3 +9804,9 @@ main {
   color: inherit;
 }
 
+.ftco-gallery .img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}

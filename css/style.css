@@ -9792,3 +9792,15 @@ main {
     min-height: 220px;
   }
 }
+/* Make homepage events static (not clickable) */
+.blog-entry a {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+/* Remove hover effects so they don’t look clickable */
+.blog-entry a:hover {
+  color: inherit;
+}
+

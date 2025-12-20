@@ -9715,3 +9715,80 @@ main {
 .whatsapp-link:hover {
   text-decoration: underline;
 }
+/* Volunteer Section Wrapper */
+.volunteer-section {
+  background: #f4f4f4;
+  padding: 90px 0;
+}
+
+/* Card / Placeholder */
+.volunteer-box {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Left content */
+.volunteer-content {
+  padding: 50px 45px;
+}
+
+.volunteer-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.volunteer-tagline {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f96d00;
+  margin-bottom: 25px;
+}
+
+.volunteer-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.volunteer-contact {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* WhatsApp link */
+.whatsapp-link {
+  color: #25D366;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+/* Right image */
+.volunteer-image {
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .volunteer-content {
+    padding: 35px 25px;
+    text-align: center;
+  }
+
+  .volunteer-image {
+    min-height: 220px;
+  }
+}

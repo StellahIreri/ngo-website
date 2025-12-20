@@ -9810,3 +9810,10 @@ main {
   background-position: center;
   position: relative;
 }
+.volunteer-image {
+  width: 50%;           /* or whatever width you want */
+  height: 100%;         /* match parent container height */
+  background-size: cover; /* makes image fully cover container */
+  background-position: center; /* centers the image */
+  border-radius: 10px;  /* optional for nicer look */
+}

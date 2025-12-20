@@ -3331,6 +3331,44 @@ input[type="button"].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%; }
+/* Header site title beside logo */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  line-height: 1.1;
+}
+
+/* Main organization name */
+.site-title .main-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+/* Tagline */
+.site-title .tagline {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* Align logo + text nicely */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive handling */
+@media (max-width: 992px) {
+  .site-title {
+    display: none; /* hides text on small screens to avoid clutter */
+  }
+}
+
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,

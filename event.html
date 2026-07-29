@@ -26,13 +26,28 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+
+    <!-- Make event images behave like event20/event21 -->
+    <style>
+    .bg-contain {
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      min-height: 200px !important;
+    }
+    @media (max-width: 576px) {
+      .bg-contain { min-height: 150px !important; }
+    }
+    </style>
+
+   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
+      <!-- Replace text "Welfare" with logo image -->
       <a class="navbar-brand" href="index.html">
-         <img src="images/logo-circle.png" alt="Welfare Logo" style="height:60px;">
+        <img src="images/logo-circle.png" alt="Welfare Logo" style="height:60px;">
       </a>
 
 		<div class="site-title">
@@ -81,8 +96,8 @@
 <div class="blog-entry align-self-stretch">
 
           <!-- IMAGE (NOT CLICKABLE) -->
-          <div class="block-20"
-               style="background-image: url('images/event20.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; min-height: 200px;">
+          <div class="block-20 bg-contain"
+               style="background-image: url('images/event20.jpg');">
           </div>
 
           <div class="text p-4 d-block">
@@ -114,8 +129,8 @@
 <div class="blog-entry align-self-stretch">
 
           <!-- IMAGE (NOT CLICKABLE) -->
-          <div class="block-20"
-               style="background-image: url('images/event21.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; min-height: 200px;">
+          <div class="block-20 bg-contain"
+               style="background-image: url('images/event21.jpg');">
           </div>
 
           <div class="text p-4 d-block">
@@ -147,7 +162,7 @@
         <div class="blog-entry align-self-stretch">
 
           <!-- IMAGE (NOT CLICKABLE) -->
-          <div class="block-20"
+          <div class="block-20 bg-contain"
                style="background-image: url('images/events4.jpeg');">
           </div>
 
@@ -178,7 +193,7 @@
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch">
 
-          <div class="block-20"
+          <div class="block-20 bg-contain"
                style="background-image: url('images/events5.jpeg');">
           </div>
 
@@ -208,7 +223,7 @@
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch">
 
-          <div class="block-20"
+          <div class="block-20 bg-contain"
                style="background-image: url('images/events6.jpeg');">
           </div>
 
@@ -238,7 +253,7 @@
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch">
 
-          <div class="block-20"
+          <div class="block-20 bg-contain"
                style="background-image: url('images/events7.jpeg');">
           </div>
 
@@ -267,7 +282,7 @@
       <div class="col-md-4 d-flex ftco-animate">
         <div class="blog-entry align-self-stretch">
 
-          <div class="block-20"
+          <div class="block-20 bg-contain"
                style="background-image: url('images/events11.jpeg');">
           </div>
 
@@ -302,7 +317,7 @@
 		
 
     <footer class="ftco-footer ftco-section img">
-    	<div class="overlay"></div>
+     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-3">
@@ -358,8 +373,8 @@
           </div>
           <div class="col-md-3">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have any Questions?</h2>
-            	<div class="block-23 mb-3">
+             	<h2 class="ftco-heading-2">Have any Questions?</h2>
+             	<div class="block-23 mb-3">
  		             <ul>
  		                <li><span class="icon icon-map-marker"></span><span class="text">28 Arrowsic street, Worcester MA 01606</span></li>
  		                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +1 (774) 386-3052</span></a></li>
@@ -383,7 +398,7 @@
   
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><cir[...]</svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><cir[...]
 
 
   <script src="js/jquery.min.js"></script>

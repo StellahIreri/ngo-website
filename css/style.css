@@ -40,6 +40,13 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
